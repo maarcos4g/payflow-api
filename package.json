@@ -4,7 +4,7 @@
   "description": "API do PayFlow, gerenciador de boletos",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch src/server.ts"
+    "dev": "tsx watch src/http/server.ts"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@prisma/client": "^5.14.0"
+    "@prisma/client": "^5.14.0",
+    "fastify": "^4.27.0"
   }
 }
