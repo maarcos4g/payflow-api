@@ -12,4 +12,8 @@ model User {
   fullName   String @map("full_name")
   publicName String @map("public_name")
   avatarUrl  String @map("avatar_url")
+  googleId   String @unique @map("google_id")
+  email      String @unique
+
+  @@map("users")
 }
