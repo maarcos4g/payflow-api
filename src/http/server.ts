@@ -6,7 +6,7 @@ import { env } from '@/env'
 
 import { errorHandler } from "@/error-handler"
 
-import { createUser } from "./routes/create-user"
+import { createUser } from "./routes/auth-user"
 
 const app = fastify()
 

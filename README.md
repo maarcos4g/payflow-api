@@ -4,8 +4,8 @@ Stack: Node.js, Fastify, Prisma, Google Login
 
 ## Features (rotas)
 
-- [ ] Criação de usuário
-- [ ] Login de usuário
+- [x] Criação de usuário
+- [x] Login de usuário
 - [ ] Update perfil do usuário
 - [ ] Criação de novos boletos
 - [ ] Extrato dos boletos
