@@ -15,5 +15,20 @@ model User {
   googleId   String @unique @map("google_id")
   email      String @unique
 
+  tickets Ticket[]
+
   @@map("users")
+}
+
+model Ticket {
+  id           String   @id @default(cuid())
+  name         String
+  dueDate      DateTime @map("due_date")
+  valueInCents Int      @map("value_in_cents")
+  barcode      String
+
+  user   User   @relation(fields: [userId], references: [id])
+  userId String
+
+  @@map("tickets")
 }

@@ -7,7 +7,7 @@ Stack: Node.js, Fastify, Prisma, Google Login
 - [x] Criação de usuário
 - [x] Login de usuário
 - [x] Update perfil do usuário
-- [ ] Criação de novos boletos
+- [x] Criação de novos boletos
 - [ ] Extrato dos boletos
 - [ ] Verificar quais boletos estão próximo de vencer e alertar o usuário
 - [ ] Excluir boletos

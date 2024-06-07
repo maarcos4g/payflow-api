@@ -8,6 +8,7 @@ import { errorHandler } from "@/error-handler"
 
 import { createUser } from "./routes/auth-user"
 import { updateProfile } from "./routes/update-profile"
+import { createTicket } from "./routes/create-ticket"
 
 const app = fastify()
 
@@ -22,6 +23,7 @@ app.register(jwt, {
 //routes
 app.register(createUser)
 app.register(updateProfile)
+app.register(createTicket)
 
 
 app.setErrorHandler(errorHandler)
