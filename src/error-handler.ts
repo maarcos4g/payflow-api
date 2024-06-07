@@ -21,9 +21,5 @@ export const errorHandler: FastifyErrorHandler = (error, request, reply) => {
     return reply.status(401).send({ message: 'Unauthorized', details: error.message })
   }
 
-  if (error.code === 'P2002') {
-    return reply.status(400).send({message: `${error.meta.target[0]} already exist.`})
-  }
-
   return reply.status(500).send({ message: 'Internal Server Error!' })
 }
