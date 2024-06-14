@@ -9,6 +9,7 @@ import { errorHandler } from "@/error-handler"
 import { createUser } from "./routes/auth-user"
 import { updateProfile } from "./routes/update-profile"
 import { createTicket } from "./routes/create-ticket"
+import { getTicketsExtract } from "./routes/get-tickets-extract"
 
 const app = fastify()
 
@@ -24,6 +25,7 @@ app.register(jwt, {
 app.register(createUser)
 app.register(updateProfile)
 app.register(createTicket)
+app.register(getTicketsExtract)
 
 
 app.setErrorHandler(errorHandler)
