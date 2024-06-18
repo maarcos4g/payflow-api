@@ -10,6 +10,7 @@ import { createUser } from "./routes/auth-user"
 import { updateProfile } from "./routes/update-profile"
 import { createTicket } from "./routes/create-ticket"
 import { getTicketsExtract } from "./routes/get-tickets-extract"
+import { setTicketAsPayed } from "./routes/set-ticket-as-payed"
 
 const app = fastify()
 
@@ -26,6 +27,7 @@ app.register(createUser)
 app.register(updateProfile)
 app.register(createTicket)
 app.register(getTicketsExtract)
+app.register(setTicketAsPayed)
 
 
 app.setErrorHandler(errorHandler)
