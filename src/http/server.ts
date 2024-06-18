@@ -12,6 +12,7 @@ import { createTicket } from "./routes/create-ticket"
 import { getTicketsExtract } from "./routes/get-tickets-extract"
 import { setTicketAsPayed } from "./routes/set-ticket-as-payed"
 import { verifyTicket } from "./routes/verify-tickets"
+import { deleteTicket } from "./routes/delete-ticket"
 
 const app = fastify()
 
@@ -30,7 +31,7 @@ app.register(createTicket)
 app.register(getTicketsExtract)
 app.register(setTicketAsPayed)
 app.register(verifyTicket)
-
+app.register(deleteTicket)
 
 app.setErrorHandler(errorHandler)
 
